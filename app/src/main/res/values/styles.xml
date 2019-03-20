@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/app_font</item>
+
     </style>
 
     <style name="trulysTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -14,6 +16,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorAccent">#ff5521</item>
 
+        <item name="android:fontFamily">@font/app_font</item>
     </style>
 
 
@@ -23,6 +26,8 @@
         <item name="colorPrimary">@color/red_colorPrimary</item>
         <item name="colorPrimaryDark">@color/red_colorPrimaryDark</item>
         <item name="colorAccent">@color/red_colorAccent</item>
+
+        <item name="android:fontFamily">@font/app_font</item>
     </style>
 
     <style name="AppTheme_pink" parent="Theme.AppCompat.Light.NoActionBar">
@@ -30,6 +35,8 @@
         <item name="colorPrimary">@color/pink_colorPrimary</item>
         <item name="colorPrimaryDark">@color/pink_colorPrimaryDark</item>
         <item name="colorAccent">@color/pink_colorAccent</item>
+
+        <item name="android:fontFamily">@font/app_font</item>
     </style>
 
     <style name="AppTheme_darpink" parent="Theme.AppCompat.Light.NoActionBar">
