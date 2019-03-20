@@ -11,7 +11,6 @@ import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -89,11 +88,6 @@ public class Handy {
         }
     }
 
-    //returns token to send to db when user turns on notifications
-    public static String getToken() {
-        return FirebaseInstanceId.getInstance().getToken();
-    }
-    // Create a helper method called isNetworkAvailable() that will return true or false depending upon whether the network is available or not. It will look something like this
 
     public static boolean isNetworkAvailable(Context context) {
         ConnectivityManager manager =

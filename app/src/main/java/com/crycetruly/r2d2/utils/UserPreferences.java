@@ -48,20 +48,7 @@ public class UserPreferences {
 
     }
 
-    public static void HandleNotificationsUserPreferences(Context context) {
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        Boolean isnotificationson = preferences.getBoolean("notifications_new_message", false);
 
-        if (isnotificationson) {
-            Log.d(TAG, "Application settings: Nofications on");
-            FirebaseDatabase.getInstance().getReference().child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("device_token")
-                    .setValue(Handy.getToken());
-        } else {
-            Log.d(TAG, ":Application settings Nofications off");
-            FirebaseDatabase.getInstance().getReference().child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("device_token")
-                    .setValue(null);
-        }
-    }
 
     public static String getNoticationStatus(Context context) {
         String status = " ";
